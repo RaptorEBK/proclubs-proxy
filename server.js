@@ -79,7 +79,7 @@ async function relay(req, res, eaPath) {
 
 // --- Routes (mirror EA's path shape under /api/fc) ---
 
-app.get('/api/fc/clubs/search', (req, res) => relay(req, res, '/clubs/search'));
+app.get('/api/fc/clubs/search', (req, res) => relay(req, res, '/allTimeLeaderboard/search'));
 app.get('/api/fc/clubs/info', (req, res) => relay(req, res, '/clubs/info'));
 app.get('/api/fc/clubs/matches', (req, res) => relay(req, res, '/clubs/matches'));
 app.get('/api/fc/members/stats', (req, res) => relay(req, res, '/members/stats'));
